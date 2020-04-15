@@ -1,14 +1,15 @@
 language: node_js
-
 node_js:
-  - node
-
+- node
 script:
-  # - npm run lint
-  - npm run test:server &
-  - sleep 5
-  - npm run test:coverage
+- npm run test:server &
+- sleep 5
+- npm run test:coverage
+deploy:
+  provider: npm
+  email: marcetienne@dartus.fr
+  api_key:
+    secure: BKQpOl2fI+lbz9mprP0l16UY9zAYQojbF6SvrvRsly/PDD9KAm8bqDTd4Evqca8cF81zmWZePVuIQO/1vQUkTp2GExf9+uVgQ8lL8xmoHozX+xNy2V5z4YPO/3sbtuwvfM4/ZbK+9hM+S4U373A3DXDLau9drDl3Q6ApkScFhhcKwrCRx4qD0doFkXAwlNwSXvMiYdwjlVmPyvcHuWdlggoF/lGnmbHUbFGXON5cz+ssG1swm9w8G3luF42dUQAH3O2z3gsXMXnEmK/vkePMGL9Mbg8k2BnS0vtalzlSsrKqNbiKgE9RSSv8Du2umFYH5bt+S7/R1YSMOv6rqtaodFyo7YCE9NOV/W4D2ZiFRKF1bo3BTDLvkZpGRh8lI/cJhEtVUzKTkBlS4uqWaoowmbmKTxIrafCIJfP6fG6rEthzJRDA+kJiKhTVkKqJRyTeGLpSLO/WoKxA4DmKfRXQxJSSwp4eIFLBbho55tL/bGTE1AV+abir0OKPDWYQYwOYOq9nH3HHVoE5Crgn65XodAuw52BjMz+6Da6v+qCH3pJPnrbkMeGhx5rTXNPahHZKnGC3UGFFXIIHl7H98/LuzgIU3y0vzDSn3Atj6/lfqVtLmGRSR03YwiwIJ9rus/7LD0t9yDepJ7/BLG0zG8VTpECMIKCOSY8YBISf02+Gy1o=
 
 notifications:
   email: true
-
