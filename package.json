@@ -1,6 +1,6 @@
 {
   "name": "kahaki",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get preview data from a link. Just grab it.",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/medartus/mahaki"
+    "url": "https://github.com/medartus/kahaki"
   },
   "keywords": [
     "open graph",
