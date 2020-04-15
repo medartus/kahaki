@@ -54,7 +54,7 @@ describe("kahaki", () => {
       try {
         await kahaki.getPreview("url")
       } catch (error) {
-        expect(error.message).to.eql('Invalid URL');
+        expect(error.message).to.eql('Invalid URL: url');
       }
     })
   });
@@ -87,7 +87,7 @@ describe("kahaki", () => {
       try {
         await kahaki.getAllMetadata("url")
       } catch (error) {
-        expect(error.message).to.eql('Invalid URL');
+        expect(error.message).to.eql('Invalid URL: url');
       }
     })
   });
@@ -112,7 +112,7 @@ describe("kahaki", () => {
       try {
         await kahaki.getJsonld("url")
       } catch (error) {
-        expect(error.message).to.eql('Invalid URL');
+        expect(error.message).to.eql('Invalid URL: url');
       }
     })
   });
