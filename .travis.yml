@@ -4,10 +4,10 @@ node_js:
   - node
 
 script:
-  - npm run lint
+  # - npm run lint
   - npm run test:server &
   - sleep 5
-  - npm test:coverge
+  - npm run test:coverge
 
 notifications:
   email: true
