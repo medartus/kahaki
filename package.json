@@ -6,8 +6,8 @@
   "scripts": {
     "start": "nodemon index.js",
     "test": "mocha",
-    "coverage": "nyc --reporter=html --reporter=text mocha",
-    "test-server": "node ./test_setup/server"
+    "test:coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "test:server": "node ./test_setup/server"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "coveralls": "^3.0.11",
     "express": "4.16.2",
     "mocha": "4.0.1",
+    "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^15.0.1"
   }
 }
