@@ -1,0 +1,39 @@
+{
+  "name": "kahaki",
+  "version": "0.0.1",
+  "description": "Get preview data from a link. Just grab it.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "mocha",
+    "coverage": "nyc --reporter=html --reporter=text mocha",
+    "test-server": "node ./test_setup/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medartus/mahaki"
+  },
+  "keywords": [
+    "open graph",
+    "twitter cards",
+    "metadata",
+    "json-ld",
+    "jsonld",
+    "link preview",
+    "url preview",
+    "link",
+    "url"
+  ],
+  "author": "Marc-Etienne Dartus",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "11.3.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "coveralls": "^3.0.11",
+    "express": "4.16.2",
+    "mocha": "4.0.1",
+    "nyc": "^15.0.1"
+  }
+}
