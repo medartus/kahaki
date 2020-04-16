@@ -3,18 +3,16 @@
  * @since 15/04/20
  */
 
-let chai = require("chai")
-  , expect = chai.expect;
+const chai = require("chai"), expect = chai.expect;
+const { describe, it } = require("mocha");
 
-let kahaki = require("../lib");
-let testResults = require("../test_setup/testResults.json");
-let helpers = require("./helpers");
-let {PORT} = require("../test_setup/config");
+const kahaki = require("../lib");
+const testResults = require("../test_setup/testResults.json");
+const {PORT} = require("../test_setup/config");
 
-
-let URL_TEST = `http://localhost:${PORT}/test`;
-let URL_PREVIEW = `http://localhost:${PORT}/preview`;
-let URL_EMPTY = `http://localhost:${PORT}/empty`;
+const URL_TEST = `http://localhost:${PORT}/test`;
+const URL_PREVIEW = `http://localhost:${PORT}/preview`;
+const URL_EMPTY = `http://localhost:${PORT}/empty`;
 
 describe("kahaki", () => {
   describe("#getPreview", () => {
