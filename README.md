@@ -15,8 +15,6 @@ Kahaki package provide metadata, jsonld from any webpage. You can also get data 
 
 ## Usage 👩‍💻
 
-You only have to do some http request to the api : `https://url-preview.herokuapp.com/api/v1`
-
 ### getPreview
 
 |  Parameters      | required  |     type     |         Value         |
@@ -155,8 +153,6 @@ You only have to do some http request to the api : `https://url-preview.herokuap
 |  Parameters  | required  |     type     |         Value         |
 | :----------: | :-------: | :----------: | :-------------------: |
 |     `url`    |   true    |    string    |      Url to scrap     |
-
-> To avoid any problem, don't forget to [url encode](https://www.urlencoder.org/) the value you pass to the url parameter !
 
 #### Response
 
