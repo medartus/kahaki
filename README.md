@@ -67,15 +67,12 @@ Kahaki package provide metadata, jsonld from any webpage. You can also get data 
 
 ### GET /metadata
 
-#### Request
 
 |  Parameters  | required  |     type     |         Value         |
 | :----------: | :-------: | :----------: | :-------------------: |
 |     `url`    |   true    |    string    |      Url to scrap     |
 |  `subObject` |  false    |    boolean   |Getting object response|
 
-
-#### Response
 
 
 ```javascript
@@ -147,16 +144,21 @@ Kahaki package provide metadata, jsonld from any webpage. You can also get data 
 
 ### GET /jsonld
 
-#### Request
-
-
 |  Parameters  | required  |     type     |         Value         |
 | :----------: | :-------: | :----------: | :-------------------: |
 |     `url`    |   true    |    string    |      Url to scrap     |
 
-#### Response
 
-Response body:
+```javascript
+    let kahaki = require("kahaki");
+
+    (async () => {
+        const result = await kahaki.getPreview("https://www.youtube.com/watch?v=dQw4w9WgXcQ",{ subObject: true });
+
+        console.log(result);
+    })();
+```
+
 
 ```json
 [
