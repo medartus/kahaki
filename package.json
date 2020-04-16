@@ -1,6 +1,6 @@
 {
   "name": "kahaki",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Get preview data from a link. Just grab it.",
   "main": "index.js",
   "scripts": {
