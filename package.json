@@ -1,7 +1,7 @@
 {
   "name": "kahaki",
   "version": "0.0.4",
-  "description": "Get preview data from a link. Just grab it.",
+  "description": "💻 Get metadata, jsonld and url preview from any webpage. ",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
