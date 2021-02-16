@@ -65,7 +65,7 @@ Kahaki package provide metadata, jsonld from any webpage. You can also get data 
 }
 ```
 
-### GET /metadata
+### getAllMetadata
 
 
 |  Parameters  | required  |     type     |         Value         |
@@ -79,7 +79,7 @@ Kahaki package provide metadata, jsonld from any webpage. You can also get data 
     let kahaki = require("kahaki");
 
     (async () => {
-        const result = await kahaki.getPreview("https://www.youtube.com/watch?v=dQw4w9WgXcQ",{ subObject: true });
+        const result = await kahaki.getAllMetadata("https://www.youtube.com/watch?v=dQw4w9WgXcQ",{ subObject: true });
 
         console.log(result);
     })();
@@ -142,7 +142,7 @@ Kahaki package provide metadata, jsonld from any webpage. You can also get data 
 }
 ```
 
-### GET /jsonld
+### getJsonld
 
 |  Parameters  | required  |     type     |         Value         |
 | :----------: | :-------: | :----------: | :-------------------: |
@@ -153,7 +153,7 @@ Kahaki package provide metadata, jsonld from any webpage. You can also get data 
     let kahaki = require("kahaki");
 
     (async () => {
-        const result = await kahaki.getPreview("https://www.youtube.com/watch?v=dQw4w9WgXcQ",{ subObject: true });
+        const result = await kahaki.getJsonld("https://www.youtube.com/watch?v=dQw4w9WgXcQ",{ subObject: true });
 
         console.log(result);
     })();
